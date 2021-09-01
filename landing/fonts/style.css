@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Redes-sociales2-font';
+  src:  url('Redes-sociales2-font.eot?hbsg1v');
+  src:  url('Redes-sociales2-font.eot?hbsg1v#iefix') format('embedded-opentype'),
+    url('Redes-sociales2-font.ttf?hbsg1v') format('truetype'),
+    url('Redes-sociales2-font.woff?hbsg1v') format('woff'),
+    url('Redes-sociales2-font.svg?hbsg1v#Redes-sociales2-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Redes-sociales2-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+.icon-bars:before {
+  content: "\f0c9";
+}
+.icon-navicon:before {
+  content: "\f0c9";
+}
+.icon-reorder:before {
+  content: "\f0c9";
+}
+.icon-instagram:before {
+  content: "\f16d";
+}
+.icon-android:before {
+  content: "\f17b";
+}
+.icon-android1:before {
+  content: "\e900";
+}

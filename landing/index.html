@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1., user-scalable = no" />
+    <title>Ricardo Juan Vitali - DWTM2A 2020 Final</title>
+    <!-- Recordar de cambiar el title -->
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="fonts/style.css">
+</head>
+
+<body>
+
+    <nav id="menu">
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbuton">
+            <span class="icon-navicon"></span>
+        </label>
+
+        <h1>E-commerce Thor</h1>
+
+        <ul>
+            <li><a href="#forma">Home</a></li>
+            <li><a href="#pastillas">Información</a></li>
+            <li><a href="#pasos2">Pasos</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#descargar">Descargar</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Header -->
+
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12" id="forma">
+
+                <h2>E-commerce</h2>
+                <p>Conocé nuestro e-commerce con entregas a domicilio y los mejores productos Thor a la venta en tan
+                    sólo
+                    unos
+                    sencillos pasos.</p>
+                <a href="">Ver más</a>
+
+                <picture>
+                    <source media="(min-width: 768px)" srcset="imagenes/celularesCostado.png">
+                    <img src="imagenes/celularesCostadoMobile.png" alt="Foto de dos celulares con la app Thor">
+                </picture>
+
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Pastilla -->
+
+    <section class="container col-sm-8 text-center encuentro" id="pastillas">
+
+        <h2>Encontra los mejores</h2>
+
+        <div class="columna" id="pastilla1">
+            <img src="imagenes/tecladoLogo.png" alt="Icono de Teclado">
+            <h3>Teclados</h3>
+            <p>Tenemos teclados desde mecánicos, semi mecánicos o simples de la mejor calidad.</p>
+        </div>
+        <div class="columna" id="pastilla2">
+            <img src="imagenes/headsetLogo.png" alt="Auriculares">
+            <h3>Auriculares</h3>
+            <p>Cómodos auriculares para largas horas de juego con sonido envolvente 7.1. </p>
+        </div>
+        <div class="columna" id="pastilla3">
+            <img src="imagenes/mouseLogo.png" alt="Mouse">
+            <h3>Mouse</h3>
+            <p>Tenemos un mouse para cada estilo, con diversos pesos, con macros y con variedad de DPI.</p>
+        </div>
+
+    </section>
+
+    <!-- Pasos -->
+
+    <main class="container-fluid pasos" id="pasos2">
+
+        <picture>
+            <source media="(min-width: 768px)" srcset="imagenes/celularMotog.png">
+            <img src="imagenes/celularMotogMobile.png" alt="Mockup de celular con la app" class="imagenCelu">
+        </picture>
+
+
+        <h2>Solo unos sencillos pasos</h2>
+
+        <div id="texto">
+            <p>Podes obtener cualquier producto en tan solo cuatro sencillos pasos. El más dificil de todos es
+                seleccionar
+                el producto que desea comprar entre tanta variedad.</p>
+        </div>
+        <div id="contenedor">
+            <div class="spanes">
+
+                <p><span>1</span>Seleccione el producto que desea comprar.</p>
+            </div>
+            <div class="spanes">
+
+                <p><span>2</span>Agregue el producto al carro de compras.</p>
+            </div>
+            <div class="spanes">
+
+                <p><span>3</span>Complete el formulario con los datos solicitados.</p>
+            </div>
+            <div class="spanes">
+
+                <p><span>4</span>Espere a que llegue el producto y disfrutelo.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Galeria -->
+
+    <article class="container-fluid galery" id="galeria">
+        <h2>Echa un vistazo</h2>
+
+        <div class="container">
+            <div class="row">
+                <div class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="imagenes/celularMotogLogo.png"
+                                alt="Celular con el logo de Thor">
+
+                        </div>
+                        <div class="carousel-item">
+
+                            <img class="d-block w-100" src="imagenes/celularMotogCompra.png"
+                                alt="Celular con venta de productos Thor">
+                        </div>
+
+                        <div class="carousel-item">
+
+                            <img class="d-block w-100" src="imagenes/celularMotog.png"
+                                alt="Celular con inicio de app Thor">
+                        </div>
+
+                    </div>
+
+                    <a class="carousel-control-prev" href="#galeria" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#galeria" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+
+    <aside class="container-fluid" id="descargar">
+
+        <h2>Descargar ahora</h2>
+        <a href="download/ThorEcommerce-debug.3875448.9.apk" download="Thor E-commerce">Descargar <span
+                class="icon-android"></span></a>
+
+
+
+
+    </aside>
+
+    <footer>
+
+        <div class="footerUno">
+
+
+            <h4 class="hGrande">Politica de Privacidad</h4>
+            <ul>
+                <li><a href="#">Terminos de Servicio</a></li>
+                <li><a href="#">Terminos de uso de contenido generado por el usuario</a></li>
+            </ul>
+
+
+        </div>
+
+        <div class="footerUno">
+
+
+            <h4 class="hGrande">Nuestro Contacto</h4>
+            <ul>
+                <li>Telefono: <a href="tel:+20123456789">+2 012 345 6789</a></li>
+                <li>Email: <a href="mailto:"> ricardo.vitali@davinci.edu.ar</a></li>
+            </ul>
+
+        </div>
+
+        <div id="redesSociales">
+            <ul>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+            </ul>
+            <p>Derechos de autor &copy; 2019</p>
+        </div>
+
+
+
+
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <script src="js/nav.js"></script>
+</body>
+
+</html>

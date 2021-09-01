@@ -1,0 +1,651 @@
+@font-face {
+    font-family: 'rubik';
+    src: url('../fonts/Rubik-Medium.ttf');
+
+}
+
+* {
+    font-family: rubik;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Nav*/
+
+
+nav {
+    background-color: #222e48;
+    height: 120px;
+    width: 100%;
+}
+
+nav h1 {
+    background-image: url('../imagenes/LogoThor.png');
+    background-repeat: no-repeat;
+    height: 100px;
+    padding: 0 100px;
+    margin-left: 10%;
+    font-size: 0;
+}
+
+nav ul {
+    /* Quiza tenga que clavar un z index por aca*/
+    position: fixed;
+    top: 0;
+    right: 5%;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+
+nav ul li a {
+    color: whitesmoke;
+
+}
+
+
+.checkbuton {
+    z-index: 9999;
+    font-size: 30px;
+    color: whitesmoke;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+    display: block;
+    border-radius: 7px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, .55);
+    background-color: rgba(0, 0, 0, .35);
+
+}
+
+
+
+#check {
+    display: none;
+}
+
+
+
+
+
+
+
+/* Header*/
+
+#forma {
+    padding-bottom: 120px;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    background: #222e48;
+
+
+}
+
+header {
+
+    color: whitesmoke;
+    text-align: center;
+
+
+}
+
+header h2 {
+    color: whitesmoke;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+header p {
+    color: whitesmoke;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+header a {
+    display: inline-block;
+    padding: .6em 1.25em;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 1.2em;
+    font-weight: 550;
+    color: #222e48;
+    border-radius: 20px;
+    background: whitesmoke;
+}
+
+header img {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Pastilla*/
+
+
+.encuentro h3 {
+    color: whitesmoke;
+}
+
+.encuentro p {
+    color: whitesmoke;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.encuentro img {
+    background: whitesmoke;
+    border-radius: 50%;
+}
+
+.columna:hover>* {
+    color: #f2ce5f;
+    transition: .7s;
+}
+
+.columna img:hover {
+    background: #f2ce5f;
+    transition: .7;
+}
+
+
+
+.columna {
+    background-color: #222e48;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+/* Pasos*/
+
+.pasos {
+    background-image: url("../imagenes/fondoPatronMobile.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: whitesmoke;
+    padding-bottom: 50px;
+
+}
+
+.pasos h2 {
+    text-align: center;
+
+}
+
+.imagenCelu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.pasos img {
+    margin-top: 5%;
+}
+
+
+
+.pasos span {
+    height: auto;
+    width: 35px;
+    font-size: 25px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #222e48;
+
+
+
+}
+
+#texto {
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.pasos p {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    align-items: center;
+    display: flex;
+}
+
+
+.spanes {
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.spanes span {
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+/* Galeria*/
+
+article h2 {
+    color: #222e48;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Descargar*/
+
+aside {
+    text-align: center;
+    color: whitesmoke;
+    background-color: #222e48;
+    padding-bottom: 50px;
+}
+
+aside h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+aside a {
+
+    display: inline-block;
+    padding: .6em 1.25em;
+    font-size: 1.2em;
+    font-weight: 550;
+    color: #a5c639;
+    border-radius: 20px;
+    background: whitesmoke;
+}
+
+aside a:hover {
+    text-decoration: none;
+    background: #a5c639;
+    color: whitesmoke;
+}
+
+/* Footer*/
+
+footer {
+    width: 100%;
+    padding: 30px 0px;
+    color: whitesmoke;
+    background-color: #1c1920;
+
+
+}
+
+footer ul {
+    line-height: 30px;
+    display: contents;
+    list-style-type: none;
+
+}
+
+footer a {
+    color: white;
+
+}
+
+
+.footerUno {
+    margin-left: 10%;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+footer a:hover {
+    color: whitesmoke;
+    text-decoration: none;
+    background: #1b9bff;
+    transition: .7s;
+}
+
+
+
+.hGrande {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+#redesSociales {
+
+    text-align: center;
+}
+
+#redesSociales a {
+    padding: 0px 20px;
+}
+
+#redesSociales p {
+    margin-top: 25px;
+
+}
+
+#redesSociales ul li {
+
+    display: inline-block;
+    font-size: 60px;
+}
+
+
+
+
+
+/*** Tablet ***/
+
+@media (max-width: 992px) {
+
+    /* Nav*/
+
+    .checkbuton {
+        display: block;
+
+
+    }
+
+    nav ul {
+        z-index: 5;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #2c3e50;
+        text-align: center;
+        transition: all .3s;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    /* Header*/
+
+    header h2 {
+        text-align: left;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    header p {
+        text-align: left;
+        width: 35%;
+        margin-left: 10%;
+    }
+
+    header a {
+        float: left;
+        margin-left: 10%;
+    }
+
+    header img {
+        margin-top: -220px;
+        float: right;
+        width: 50%;
+    }
+
+
+
+    /* Pastilla*/
+
+    .encuentro h2 {
+        margin-bottom: 30px;
+    }
+
+    .columna {
+
+        display: inline-block;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        vertical-align: top;
+        /* width: 225px;*/
+        width: 32%;
+        height: 360px;
+    }
+
+
+
+    /* Pasos*/
+
+    .pasos {
+        /* Efecto Parallax*/
+        background-image: url("../imagenes/fondoPatron.jpg") no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        color: whitesmoke;
+        padding-bottom: 50px;
+
+
+
+
+    }
+
+    #contenedor {
+        column-count: 2;
+
+    }
+
+    .pasos h2 {
+
+        text-align: left;
+    }
+
+    .pasos p {
+        margin-top: 0px;
+
+    }
+
+    .pasos span {
+
+        width: 25%;
+    }
+
+    #texto {
+        max-width: 100%;
+    }
+
+
+
+    .pasos img {
+        float: left;
+        width: 350px;
+    }
+
+    /* Galeria*/
+    .carousel {
+        margin-right: auto;
+        margin-left: auto;
+        width: 500px;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+/*** Desktop ***/
+
+
+@media (min-width: 992px) {
+
+    /* nav*/
+
+
+    nav {
+        z-index: 10;
+        position: fixed;
+        background-color: #222e48;
+        height: 100px;
+        width: 100%;
+    }
+
+    nav h1 {
+        background-image: url('../imagenes/LogoThor.png');
+        background-repeat: no-repeat;
+        padding: 0 100px;
+        margin-left: 10%;
+        height: 100px;
+        font-size: 0;
+    }
+
+    nav ul {
+        /* Quiza tenga que clavar un z index por aca*/
+        position: fixed;
+        top: 0;
+        right: 5%;
+        margin-right: 20px;
+
+    }
+
+    nav ul li {
+
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+
+    }
+
+    nav ul li a {
+        color: whitesmoke;
+        padding: 7px 13px;
+        border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+        color: whitesmoke;
+        text-decoration: none;
+        background: #1b9bff;
+        transition: .7s;
+    }
+
+
+
+    .checkbuton {
+        font-size: 30px;
+        color: whitesmoke;
+        position: fixed;
+        line-height: 80px;
+        top: 0;
+        right: 5%;
+        cursor: pointer;
+        display: none;
+
+    }
+
+    #check {
+        display: none;
+    }
+
+
+
+
+    /* Header*/
+
+
+
+    header h2 {
+        font-size: 45px;
+    }
+
+    header p {
+
+        font-size: 20px;
+    }
+
+    header img {
+
+        margin-right: 7%;
+        width: 45%;
+
+    }
+
+    header a:hover {
+        color: whitesmoke;
+        text-decoration: none;
+        background: #1b9bff;
+        transition: .7s;
+    }
+
+    /* Pastilla*/
+
+    .encuentro h2 {
+
+        font-size: 35px;
+    }
+
+    /* Pasos*/
+
+
+
+    .pasos {
+        display: inline-block;
+    }
+
+    .pasos h2 {
+        margin-top: 60px;
+        font-size: 35px;
+    }
+
+    #texto {
+        margin-top: 20px;
+    }
+
+    .pasos p {
+        font-size: 18px;
+    }
+
+    .pasos span {
+
+        width: 35px;
+    }
+
+    .pasos img {
+        width: 37%;
+    }
+
+    article h2 {
+        font-size: 35px;
+    }
+
+    /* Galeria*/
+    .carousel {
+        margin-right: auto;
+        margin-left: auto;
+        width: 500px;
+
+    }
+
+}
